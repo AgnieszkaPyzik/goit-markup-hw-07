@@ -24,31 +24,34 @@
     <header>
       <div class="container main-body">
         <nav class="menu">
-          <a class="logo" href="/index.html">Web<span class="text">Studio</span></a>
-          <ul class="link-nav-1">
+          <a class="menu__logo" href="/index.html">Web<span class="menu__text">Studio</span></a>
+          <ul class="menu__navigation">
+            <!--Zmiana nazwy link-nav-1 na navigation-->
             <li>
-              <a class="link-nav" href="./index.html"><span class="link-nav-agencja">Agencja</a>
+              <a class="menu__link-nav" href="./index.html"><span class="menu__link-nav-agencja">Agencja</a>
             </li>
             <li>
-              <a class="link-nav" href="./portfolio.html">Portfolio</a>
+              <a class="menu__link-nav" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="link-nav" href="#">Kontakt</a>
+              <a class="manu__link-nav" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="link-data-1">
+        <ul class="menu__navigation-2">
+          <!--Zmiana nazwy link-data-1 na navigation-2-->
+          <!--Zmiana nazwy link-data na link-nav-2-->
           <li>
-            <a class="link-data" href="mailto:info@devstudio.com">
-              <svg class="icon-data-1" width="16px" height="12px">
+            <a class="menu__link-nav-2" href="mailto:info@devstudio.com">
+              <svg class="menu__icon-nav-2" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a class="link-data" href="tel:+481111111">
-              <svg class="icon-data-1" width="10px" height="16px">
+            <a class="menu__link-nav-2" href="tel:+481111111">
+              <svg class="manu__icon-nav-2" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone-1"></use>
               </svg>
               +48 111 111 111
@@ -72,53 +75,53 @@
       <section class="section group-2">
         <div class="container">
           <ul class="lorem-list">
-            <li class="item">
-              <div class="lorem-icons-1">
-                <svg class="lorem-icons" width="65.32" hight="70">
+            <li>
+              <div class="lorem-list__item">
+                <svg class="lorem-list__icons" width="65.32" hight="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="lorem">Lorem Ipsum</h3>
-              <p class="lorem-text">
+              <h3 class="lorem-list__lorem">Lorem Ipsum</h3>
+              <p class="lorem-list__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor mollitia fugit
                 blanditiis consectetur tempora explicabo temporibus saepe deleniti aperiam?
                 Accusamus accusantium minus, dolorum hic laborum inventore quis quam animi. Quis?
               </p>
             </li>
-            <li class="item">
-              <div class="lorem-icons-1">
-                <svg class="lorem-icons" width="66.96" hight="70">
+            <li>
+              <div class="lorem-list__item">
+                <svg class="lorem-list__icons" width="66.96" hight="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="lorem">Lorem Ipsum</h3>
-              <p class="lorem-text">
+              <h3 class="lorem-list__lorem">Lorem Ipsum</h3>
+              <p class="lorem-list__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sit molestiae
                 maiores placeat odit iusto voluptatum omnis ea qui, ratione, maxime obcaecati fugiat
                 aut incidunt, nulla at illo numquam? Enim?
               </p>
             </li>
-            <li class="item">
-              <div class="lorem-icons-1">
-                <svg class="lorem-icons" width="70" hight="53.69">
+            <li>
+              <div class="lorem-list__item">
+                <svg class="lorem-list__icons" width="70" hight="53.69">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="lorem">Lorem Ipsum</h3>
-              <p class="lorem-text">
+              <h3 class="lorem-list__lorem">Lorem Ipsum</h3>
+              <p class="lorem-list__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis nihil totam,
                 aliquam sunt incidunt iusto possimus illum voluptatibus, magni laboriosam, expedita
                 odit tenetur ad. Quos ad error labore maiores?
               </p>
             </li>
-            <li class="item">
-              <div class="lorem-icons-1">
-                <svg class="lorem-icons" width="54.83" hight="60.66">
+            <li>
+              <div class="lorem-list__item">
+                <svg class="lorem-list__icons" width="54.83" hight="60.66">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="lorem">Lorem Ipsum</h3>
-              <p class="lorem-text">
+              <h3 class="lorem-list__lorem">Lorem Ipsum</h3>
+              <p class="lorem-list__text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, dolore quae
                 quidem ullam veniam cum laudantium deleniti consequuntur in quam impedit provident
                 ipsa fuga minima debitis tenetur molestiae eaque id!
@@ -383,30 +386,30 @@
       <div class="modal">
         <form>
           <p>Zostaw swoje dane w formularzu poniżej</p>
-          <label class="modal-label">
+          <label class="modal__label">
             Imię
-            <input type="text" name="name" class="modal-input" />
-            <svg class="modal-icon" width="18" hight="18">
+            <input type="text" name="name" class="modal__input" />
+            <svg class="modal__icon" width="18" hight="18">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </label>
-          <label class="modal-label">
+          <label class="modal__label">
             Telefon
-            <input type="tel" name="phone" class="modal-input" />
-            <svg class="modal-icon" width="18" hight="18">
+            <input type="tel" name="phone" class="modal__input" />
+            <svg class="modal__icon" width="18" hight="18">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </label>
-          <label class="modal-label">
+          <label class="modal__label">
             E-mail
-            <input type="email" name="email" class="modal-input" />
-            <svg class="modal-icon" width="18" hight="18">
+            <input type="email" name="email" class="modal__input" />
+            <svg class="modal__icon" width="18" hight="18">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </label>
-          <label class="modal-label">
+          <label class="modal__label">
             Komentarz
-            <textarea name="text" class="comment-box" placeholder="Wprowadź tekst"></textarea>
+            <textarea name="text" class="modal__comment-box" placeholder="Wprowadź tekst"></textarea>
           </label>
           <div class="checkbox-label">
             <label>

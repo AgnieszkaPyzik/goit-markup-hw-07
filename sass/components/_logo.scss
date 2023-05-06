@@ -1,0 +1,17 @@
+
+
+.menu__logo {
+  color: $themeColor;
+  padding-right: 47px;
+  
+  &__logo &__text {
+    font-weight: 700;
+    font-family: $fontSecond;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+  }
+  &__text {
+    color: $brandColor;
+  }
+}

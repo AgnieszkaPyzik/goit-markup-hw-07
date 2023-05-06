@@ -1,0 +1,54 @@
+.menu,
+&__navigation,
+&__navigation-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 46px;
+}
+.manu__link-nav,
+&__link-nav-2 {
+  font-family: $fontPrimary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.menu__link-nav {
+  color: $brandColor;
+  position: relative;
+}
+.menu__link-nav:is(:hover, :focus, :active) {
+  color: $themeColor;
+&__link-nav:active::after,
+&__link-nav-agencja::after,
+&__link-nav-portfolio::after {
+  content: '';
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $themeColor;
+  display: block;
+  margin-top: 28px;
+}
+}
+.manu__link-nav-2 {
+  display: inline-flex;
+  color: $pharagraphColor;
+  align-items: center;
+}
+.menu__icon-nav-2 {
+  fill: $pharagraphColor;
+  margin-right: 10px;
+}
+.menu__link-nav:hover,
+.menu__link-nav:focus,
+.menu__link-nav-2:hover,
+.menu__link-nav-2:focus {
+  $pharagraphColor: $themeColor;
+  color: $themeColor;
+  fill: $themeColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -82,6 +82,12 @@
     line-height: 1.9;
     color: $PharagraphColor;
   }
+  .main-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+  }
   .main-content {
     text-align: center;
     padding: 170px 0;
@@ -98,4 +104,7 @@
   }
   .group-4 {
     background-color: var(--background-color);
+  }
+  footer {
+    background-color: #2f303a;
   }

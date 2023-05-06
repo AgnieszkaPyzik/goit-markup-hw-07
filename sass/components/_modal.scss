@@ -146,3 +146,19 @@
     position: relative;
     top: 3px;
   }
+  .modal-button {
+    font-family: var(--font-primary);
+    background-color: var(--theme-color);
+    color: var(--light-color);
+    font-weight: 700;
+    line-height: 1.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    padding: 10px 41px 10px 42px;
+    margin-top: 30px;
+  }
+  .modal-button::first-letter {
+    text-transform: uppercase;
+  }

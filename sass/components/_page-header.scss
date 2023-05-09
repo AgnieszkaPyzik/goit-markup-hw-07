@@ -7,7 +7,7 @@
   column-gap: 46px;
 }
 .manu__link-nav,
-&__link-nav-2 {
+.menu-nav__link {
   font-family: $fontPrimary;
   font-weight: 500;
   font-size: 14px;
@@ -33,12 +33,12 @@
   margin-top: 28px;
 }
 }
-.manu__link-nav-2 {
+.manu-nav__link {
   display: inline-flex;
   color: $pharagraphColor;
   align-items: center;
 }
-.menu__icon-nav-2 {
+.menu-nav__icon {
   fill: $pharagraphColor;
   margin-right: 10px;
 }

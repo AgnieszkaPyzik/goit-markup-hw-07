@@ -69,36 +69,4 @@
     padding-top: 10px;
     padding-bottom: 16px;
   }
-  .icon-social {
-    display: inline-flex;
-    justify-content: center;
-    gap: 10px;
-    padding-bottom: 30px;
-  }
-  .icon-social__media {
-    background-color: $lightColor;
-    display: flex;
-    flex-basis: calc((100%-40px) / 4);
-    gap: 10px;
-    padding: 12px;
-    justify-content: center;
-    align-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    &:hover,
-    &:focus,
-    & svg:hover {
-      background-color: $themeColor;
-      fill: $lightColor;
-      $iconColor: $lightColor;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  .images-box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100%-90px) / 3);
-    gap: 30px;
-  }
+ 

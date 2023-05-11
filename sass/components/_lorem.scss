@@ -3,14 +3,13 @@
     flex-basis: calc((100% - 60px) / 4);
     justify-content: space-between;
     gap: 30px;
-  }
-.lorem-list__lorem {
+  &__lorem {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.1;
     padding-top: 30px;
   }
-  .lorem-list__item {
+  &__item {
     width: 270px;
     height: 120px;
     background-color: $backgroundColor;
@@ -19,9 +18,10 @@
     align-items: center;
     justify-content: center;
   }
-  .lorem-list__text {
+  &__text {
     width: 270px;
     font-size: 14px;
     line-height: 1.7;
     margin-top: 10px;
   }
+}

@@ -1,26 +1,25 @@
 .nav-header,
-.menu,
-.menu-nav {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 46px;
 }
-.manu__link-nav,
-.menu-nav__link {
+.menu__link-nav {
   font-family: $fontPrimary;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.menu__link-nav {
+.menu__link-nav--primary {
   color: $brandColor;
   position: relative;
 }
-.menu__link-nav:is(:hover, :focus, :active) {
+.menu__link-nav--primary {
+&:is(:hover, :focus, :active) {
   color: $themeColor;
-&__link-nav:active::after,
+&__link-nav--primary:active::after,
 &__link-nav-agencja::after,
 &__link-nav-portfolio::after {
   content: '';
@@ -33,19 +32,18 @@
   margin-top: 28px;
 }
 }
-.manu-nav__link {
+}
+.menu__link-nav--secondary {
   display: inline-flex;
   color: $pharagraphColor;
   align-items: center;
 }
-.menu-nav__icon {
+.menu__icon-nav {
   fill: $pharagraphColor;
   margin-right: 10px;
 }
 .menu__link-nav:hover,
-.menu__link-nav:focus,
-.menu__link-nav-2:hover,
-.menu__link-nav-2:focus {
+&:focus {
   $pharagraphColor: $themeColor;
   color: $themeColor;
   fill: $themeColor;

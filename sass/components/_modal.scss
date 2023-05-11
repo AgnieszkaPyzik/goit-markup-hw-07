@@ -19,14 +19,13 @@
     min-height: 581px;
     transform: translate(-50%, -50%);
     background-color: $lightColor;
-  }
-  .modal__icon {
+  &__icon {
     fill: $brandColor;
     position: absolute;
     transform: translate(30%, -25%);
     left: 52px;
   }
-  .modal__input {
+  &__input {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -35,7 +34,7 @@
     position: relative;
     padding-left: 42px;
   }
-  .modal__label {
+  &__label {
     font-family: $fontPrimary;
     font-style: normal;
     font-weight: 400;
@@ -47,7 +46,7 @@
     flex-direction: column;
     padding: 0 40px 10px 40px;
   }
-  .modal__comment-box {
+  &__comment-box {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -57,6 +56,7 @@
     padding-left: 16px;
     margin-top: 4px;
   }
+}
   .modal p {
     font-family: $fontPrimary;
     font-style: normal;
@@ -73,13 +73,20 @@
     transition: background-color 0.2s easy-in, box-shadow 0, 15s easy-in;
     display: block;
   }
-  .checkbox-input:focus,
+  .checkbox-input {
+    width: 16px;
+    height: 15px;
+    border-color: $brandColor;
+    display: inline-flex;
+    align-items: center;
+  &:focus,
   &:hover {
     background-color: $themeColor;
     border-color: $themeColor;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
   .modal__input:focus-within + svg,
   &:focus,
   &:hover {
@@ -93,14 +100,7 @@
     outline: none;
     border-color: $themeColor;
   }
-  .checkbox-input {
-    width: 16px;
-    height: 15px;
-    border-color: $brandColor;
-    display: inline-flex;
-    align-items: center;
-  }
-  .check {
+   .check {
     position: relative;
     transform: translate(30%, -320%);
     visibility: hidden;

@@ -1,23 +1,19 @@
-
-
-.logo,
-.nav-header__logo {
+.logo {
   color: $themeColor;
   padding-right: 47px;
-
-  &__logo &__text,
-  .logo,
-  .text2nd {
+}
+.logo,
+.nav-header__logo,
+&__text .text2nd {
     font-weight: 700;
     font-family: $fontSecond;
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.19;
-  }
   &__text {
     color: $brandColor;
   }
-}
 .text2nd {
     color: $lightColor;
   }
+}

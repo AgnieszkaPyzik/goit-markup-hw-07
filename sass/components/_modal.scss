@@ -79,8 +79,8 @@
     border-color: $brandColor;
     display: inline-flex;
     align-items: center;
-  &:focus,
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $themeColor;
     border-color: $themeColor;
     transition-duration: 250ms;
@@ -88,8 +88,8 @@
   }
 }
   .modal__input:focus-within + svg,
-  &:focus,
-  &:hover {
+  &:hover,
+  &:focus {
     outline: none;
     border-color: $themeColor;
     fill: $themeColor;

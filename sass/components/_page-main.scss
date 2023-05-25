@@ -34,7 +34,9 @@
     border-radius: 4px;
     color: $iconColor;
     &:hover,
-    &:focus {
+    &:focus,
+    & svg:hover,
+    & svg:focus {
         $iconColor: $themeColor;
         border-color: $themeColor;
         fill: $themeColor;

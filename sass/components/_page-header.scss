@@ -10,7 +10,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; 
 &:hover,
 &:focus {
   $pharagraphColor: $themeColor;
@@ -26,9 +26,10 @@
 }
 .menu__link-nav--primary:is:hover, :focus, :active {
   color: $themeColor;
-&__link-nav--primary:active::after,
-&__link-nav-agencja::after,
-&__link-nav-portfolio::after {
+}
+.menu__link-nav--primary:active::after,
+.menu__link-nav--agency::after,
+.menu__link-nav--portfolio::after {
   content: '';
   position: absolute;
   width: 53px;
@@ -37,7 +38,6 @@
   background-color: $themeColor;
   display: block;
   margin-top: 28px;
-}
 }
 .menu__link-nav--secondary {
   display: inline-flex;

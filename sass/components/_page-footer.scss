@@ -11,17 +11,10 @@
 }
 .link-footer__maps {
   color: $lightColor;
-  &__end {
-  color: rgba(255, 255, 255, 0.6);
-  &:hover,
-  &:focus {
-  color: $themeColor;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-footer__end {
+    color: rgba(255, 255, 255, 0.6);
   }
-}
-}
 .footer-social {
   text-transform: uppercase;
   font-style: normal;

@@ -9,28 +9,34 @@
     height: 44px;
     border-radius: 50%;
     padding: 12px;
-
-    .icon-social__media--person {
+  }
+  .icon-social__media--person {
     background-color: $lightColor;
     display: flex;
     flex-basis: calc((100% - 40px) / 4);
     gap: 10px;
     justify-content: center;
     align-content: center;
-
     &:hover,
     &:focus,
     & svg:hover {
     background-color: $themeColor;
     fill: $lightColor;
-    --icon-color: $lightColor;
+    $iconColor: $lightColor;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
   }
-}
   .icon-social__media--footer {
    background-color: rgba(255, 255, 255, 0.1);
+   &:hover,
+   &:focus,
+   & svg:hover,
+   & svg:focus {
+     background-color: $themeColor;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
   }
   .icon-social--footer-social-list {
     display: flex;
@@ -39,12 +45,4 @@
   }
   .icon-social__footer-icon {
     fill: $lightColor;
-    &:hover,
-    &:focus,
-    & svg:hover,
-    & svg:focus {
-      background-color: $themeColor;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
   }

@@ -33,6 +33,15 @@
     margin-top: 4px;
     position: relative;
     padding-left: 42px;
+    &:focus-within + svg,
+    &:hover,
+    &:focus {
+    outline: none;
+    border-color: $themeColor;
+    fill: $themeColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
   }
   &__label {
     font-family: $fontPrimary;
@@ -87,15 +96,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-  .modal__input:focus-within + svg,
-  &:hover,
-  &:focus {
-    outline: none;
-    border-color: $themeColor;
-    fill: $themeColor;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
   .modal textarea[name='text']:focus-within {
     outline: none;
     border-color: $themeColor;

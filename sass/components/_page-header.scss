@@ -11,13 +11,20 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+&:hover,
+&:focus {
+  $pharagraphColor: $themeColor;
+  color: $themeColor;
+  fill: $themeColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 .menu__link-nav--primary {
   color: $brandColor;
   position: relative;
 }
-.menu__link-nav--primary {
-&:is(:hover, :focus, :active) {
+.menu__link-nav--primary:is:hover, :focus, :active {
   color: $themeColor;
 &__link-nav--primary:active::after,
 &__link-nav-agencja::after,
@@ -32,7 +39,6 @@
   margin-top: 28px;
 }
 }
-}
 .menu__link-nav--secondary {
   display: inline-flex;
   color: $pharagraphColor;
@@ -41,12 +47,4 @@
 .menu__icon-nav {
   fill: $pharagraphColor;
   margin-right: 10px;
-}
-.menu__link-nav:hover,
-&:focus {
-  $pharagraphColor: $themeColor;
-  color: $themeColor;
-  fill: $themeColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

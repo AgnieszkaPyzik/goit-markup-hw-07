@@ -18,41 +18,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
       <div class="container main-body">
         <nav class="nav-header">
           <a class="logo nav-header__logo" href="/index.html"
-            >Web<span class="text">Studio</span></a
+            >Web<span class="nav-header__text">Studio</span></a
           >
-          <ul class="manu">
+          <ul class="menu">
             <li>
-              <a class="manu__link-nav" href="./index.html">Agencja</a>
+              <a class="menu__link-nav menu__link-nav--primary" href="./index.html">Agencja</a>
             </li>
             <li>
-              <a class="menu__link-nav" href="./portfolio.html"
+              <a class="menu__link-nav menu__link-nav--primary" href="./portfolio.html"
                 ><span class="menu__link-nav-portfolio">Portfolio</span></a
               >
             </li>
             <li>
-              <a class="menu__link-nav" href="#">Kontakt</a>
+              <a class="menu__link-nav menu__link-nav--primary" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="menu-nav">
+        <ul class="menu menu--menu-nav">
           <li>
-            <a class="menu-nav__link" href="mailto:info@devstudio.com">
-              <svg class="menu-nav__icon" width="16px" height="12px">
+            <a class="menu__link-nav menu__link-nav--secondary" href="mailto:info@devstudio.com">
+              <svg class="menu__icon-nav" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a class="menu-nav__link" href="tel:+481111111">
-              <svg class="menu-nav__icon" width="10px" height="16px">
+            <a class="menu__link-nav menu__link-nav--secondary" href="tel:+481111111">
+              <svg class="manu__icon-nav" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone-1"></use>
               </svg>
               +48 111 111 111
@@ -155,7 +155,7 @@
             </li>
             <li class="gallery">
               <figure class="gallery__card">
-                <div class="images-box__img-container">
+                <div class="gallery__img-container">
                   <img src="./images/inspiration.jpg" alt="inspiration" width="370" height="294" />
                   <p class="gallery__box-card">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -169,7 +169,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__box">
+            <li class="gallery">
               <figure class="gallery__card">
                 <div class="gallery__img-container">
                   <img src="./images/magazin.jpg" alt="magazin" width="370" height="294" />
@@ -228,35 +228,40 @@
           <address>
             <ul class="link-footer">
               <li>
-                <a class="link-maps" href="https://goo.gl/maps/4yjW4w5AXTQKJYEA8" target="_blank"
+                <a
+                  class="link-footer__maps"
+                  href="https://goo.gl/maps/4yjW4w5AXTQKJYEA8"
+                  target="_blank"
                   >m.Warszawa Aleje Jerozolimskie 21</a
                 >
               </li>
-              <li><a class="link-end" href="mailto:info@example.com">info@example.com</a></li>
-              <li><a class="link-end" href="tel:+481111111">+48 111 111 111</a></li>
+              <li>
+                <a class="link-footer__end" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li><a class="link-footer__end" href="tel:+481111111">+48 111 111 111</a></li>
             </ul>
           </address>
         </div>
         <div>
           <h4 class="footer-social">dołącz do nas</h4>
-          <ul class="footer-social-list">
-            <li class="footer-social-icon">
-              <svg class="footer-icon" width="20" height="20">
+          <ul class="icon-social icon-social--footer-social-list">
+            <li class="icon-social__media icon-social__media--footer">
+              <svg class="icon-social__footer-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram-3"></use>
               </svg>
             </li>
-            <li class="footer-social-icon">
-              <svg class="footer-icon" width="20" height="20">
+            <li class="icon-social__media icon-social__media--footer">
+              <svg class="icon-social__footer-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </li>
-            <li class="footer-social-icon">
-              <svg class="footer-icon" width="20" height="20">
+            <li class="icon-social__media icon-social__media--footer">
+              <svg class="icon-social__footer-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </li>
-            <li class="footer-social-icon">
-              <svg class="footer-icon" width="20" height="20">
+            <li class="icon-social__media icon-social__media--footer">
+              <svg class="icon-social__footer-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </li>
@@ -267,7 +272,7 @@
             <h4 class="footer-social">zapisz się do newslettera</h4>
             <label>
               <input type="email" class="sgn-in-email" name="email" placeholder="E-mail" required />
-              <button type="submit" class="sgn-in-button">
+              <button type="submit" class="btn btn--sign-in">
                 Zapisz się
                 <svg class="sgn-in-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>

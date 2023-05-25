@@ -30,9 +30,9 @@
   "git.autofetch": true,
   "liveSassCompile.settings.formats": [
     {
-      "format": "expanded",
+      "format": "compressed",
       "extensionName": ".min.css",
-      "savePath": "~/../css",
+      "savePath": "~/../css"
     }
   ],
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],

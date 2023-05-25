@@ -3,18 +3,16 @@
   padding-right: 47px;
 }
 .logo,
-.text2nd,
-.nav-header__logo,
-&__text {
+.text2nd .nav-header__text,
+.nav-header__logo {
     font-weight: 700;
     font-family: $fontSecond;
     font-size: 26px;
     letter-spacing: 0.03em;
-    line-height: 1.19;
-  &__text {
+    line-height: 1.19;}
+.nav-header__text {
     color: $brandColor;
   }
 .text2nd {
     color: $lightColor;
   }
-}

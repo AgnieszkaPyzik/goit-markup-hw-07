@@ -10,11 +10,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em; 
-&:hover,
-&:focus,
-& svg:hover,
-& svg:focus {
+  letter-spacing: 0.02em;
+  &:hover svg,
+  &:focus svg,
+  &:hover,
+  &:focus {
   $pharagraphColor: $themeColor;
   color: $themeColor;
   fill: $themeColor;

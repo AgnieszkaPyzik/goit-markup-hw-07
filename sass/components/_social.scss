@@ -1,16 +1,16 @@
-.icon-social--common {
+.social--common {
     display: inline-flex;
     justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
   }
-  .icon-social__media {
+  .social__media {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     padding: 12px;
   }
-  .icon-social__media--person {
+  .social__media--person {
     background-color: $lightColor;
     display: flex;
     flex-basis: calc((100% - 40px) / 4);
@@ -27,7 +27,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
   }
-  .icon-social__media--footer {
+  .social__media--footer {
    background-color: rgba(255, 255, 255, 0.1);
    &:hover,
    &:focus,
@@ -38,11 +38,11 @@
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
   }
-  .icon-social--footer-social-list {
+  .social--footer-social-list {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .icon-social__footer-icon {
+  .social__footer-icon {
     fill: $lightColor;
   }

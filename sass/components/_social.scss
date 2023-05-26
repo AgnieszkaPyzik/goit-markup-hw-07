@@ -19,7 +19,7 @@
     align-content: center;
     &:hover,
     &:focus,
-    & svg:hover {
+    &:hover svg {
     background-color: $themeColor;
     fill: $lightColor;
     $iconColor: $lightColor;
@@ -31,8 +31,8 @@
    background-color: rgba(255, 255, 255, 0.1);
    &:hover,
    &:focus,
-   & svg:hover,
-   & svg:focus {
+   &:hover svg,
+   &:focus svg {
      background-color: $themeColor;
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

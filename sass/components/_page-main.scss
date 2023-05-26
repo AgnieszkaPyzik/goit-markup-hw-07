@@ -1,14 +1,14 @@
-.pictures-list {
+.operation {
     display: inline-flex;
     justify-content: space-between;
     gap: 30px;
     padding-top: 50px;
 
-    &__img-with-text {
+    &__text {
     position: relative;
     display: inline-flex;
   }
-    &__img-text {
+    &__signature {
     font-family: $fontPrimary;
     font-weight: 700;
     font-size: 14px;
@@ -35,8 +35,8 @@
     color: $iconColor;
     &:hover,
     &:focus,
-    & svg:hover,
-    & svg:focus {
+    &:hover svg,
+    &:focus svg {
         $iconColor: $themeColor;
         border-color: $themeColor;
         fill: $themeColor;
@@ -45,13 +45,13 @@
     }
   }
 }
-.pictures-list--profession {
+.operation--profession {
   flex-basis: calc((100% - 60px) / 3);
 }
-.pictures-list--customers {
+.operation--customers {
   flex-basis: calc((100% - 150px) / 6);
 }
-.pictures-list--person {
+.operation--person {
    flex-basis: calc((100% - 90px) / 4);
  }
   .person-box {

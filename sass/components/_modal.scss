@@ -34,9 +34,11 @@
     position: relative;
     padding-left: 42px;
     &:focus-within + svg,
+    &:hover + svg,
     &:hover,
     &:focus {
     outline: none;
+    $brandColor: $themeColor;
     border-color: $themeColor;
     fill: $themeColor;
     transition-duration: 250ms;

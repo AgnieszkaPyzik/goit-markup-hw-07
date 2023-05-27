@@ -1,18 +1,15 @@
 .logo {
-  color: $themeColor;
-  padding-right: 47px;
-}
-.logo,
-.text2nd .nav-header__text,
-.nav-header__logo {
+    color: $themeColor;
+    padding-right: 47px;
     font-weight: 700;
     font-family: $fontSecond;
     font-size: 26px;
     letter-spacing: 0.03em;
-    line-height: 1.19;}
-.nav-header__text {
-    color: $brandColor;
+    line-height: 1.19;
+&--dark {
+   color: $brandColor;
   }
-.text2nd {
+&--light {
     color: $lightColor;
   }
+}

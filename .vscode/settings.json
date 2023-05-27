@@ -24,7 +24,7 @@
   "editor.formatOnType": false,
   "files.autoSave": "afterDelay",
   "editor.fontWeight": "normal",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.formatOnSave": true,
   "git.autofetch": true,

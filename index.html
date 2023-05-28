@@ -71,7 +71,7 @@
             Efektywne rozwiązania<br />
             dla waszego biznesu
           </h1>
-          <button class="btn btn--modal-button" type="button" data-modal-open>zamów usługę</button>
+          <button class="modal-btn modal-btn--modal-open" type="button" data-modal-open>zamów usługę</button>
         </div>
       </section>
       <!--2ga sekcja Lorem Ipsum-->
@@ -376,13 +376,13 @@
             </li>
           </ul>
         </div>
-        <div class="sgn-in-footer">
+        <div class="form-footer">
           <form>
-            <h4 class="footer-social">zapisz się do newslettera</h4>
-            <input type="email" class="sgn-in-email" name="email" placeholder="E-mail" required />
-            <button type="submit" class="btn btn--sign-in">
+            <h4 class="form-footer__header">zapisz się do newslettera</h4>
+            <input type="email" class="form-footer__email" name="email" placeholder="E-mail" required />
+            <button type="submit" class="form-footer__button">
               Zapisz się
-              <svg class="sgn-in-icon" width="24" height="24">
+              <svg class="form-footer__button-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -423,24 +423,24 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <div class="checkbox-label">
+          <div class="modal__checkbox-label">
             <label>
-              <input type="checkbox" name="policy" value="conditions" class="checkbox-input" />
-              <span class="policy-text">
-                Oświadczam iż akceptuję <a class="policy" href="#">Regulamin </a> i
-                <a class="policy" href="#">Politykę Prywatności.</a></span
+              <input type="checkbox" name="policy" value="conditions" class="modal__checkbox-input" />
+              <span class="modal__policy-text">
+                Oświadczam iż akceptuję <a class="modal__policy" href="#">Regulamin </a> i
+                <a class="modal__policy" href="#">Politykę Prywatności.</a></span
               >
-              <svg class="check" width="11" height="8">
+              <svg class="modal__check-icon" width="11" height="8">
                 <use href="./images/icons.svg#icon-Vector-check"></use>
               </svg>
             </label>
           </div>
           <label>
-            <button type="submit" class="btn btn--sent-button">Wyślij</button>
+            <button type="submit" class="modal-btn modal-btn--sent-button">Wyślij</button>
           </label>
         </form>
-        <button type="button" class="close-button" data-modal-close>
-          <svg class="close-icon" width="17" height="17">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close__icon" width="17" height="17">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>

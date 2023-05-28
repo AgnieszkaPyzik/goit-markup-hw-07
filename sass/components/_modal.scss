@@ -67,24 +67,12 @@
     padding-left: 16px;
     margin-top: 4px;
   }
-}
-  .modal p {
-    font-family: $fontPrimary;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $brandColor;
-    padding: 40px 40px 12px 40px;
-  }
-  .checkbox-label {
+  &__checkbox-label {
     margin: 20px 54px 30px 54px;
     transition: background-color 0.2s easy-in, box-shadow 0, 15s easy-in;
     display: block;
   }
-  .checkbox-input {
+  &__checkbox-input {
     width: 16px;
     height: 15px;
     border-color: $brandColor;
@@ -98,40 +86,39 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+&__check-icon {
+  position: relative;
+  transform: translate(30%, -320%);
+  visibility: hidden;
+}
+&__policy {
+  color: $themeColor;
+  text-decoration: underline;
+}
+&__policy-text {
+  font-family: $fontPrimary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $pharagraphColor;
+}
+}
+  .modal p {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $brandColor;
+    padding: 40px 40px 12px 40px;
+  }
   .modal textarea[name='text']:focus-within {
     outline: none;
     border-color: $themeColor;
   }
-   .check {
-    position: relative;
-    transform: translate(30%, -320%);
-    visibility: hidden;
-  }
-  .policy {
-    color: $themeColor;
-    text-decoration: underline;
-  }
-  .policy-text {
-    font-family: $fontPrimary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $pharagraphColor;
-  }
-  .close-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    background-color: $lightColor;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .close-icon {
-    fill: #000;
-    position: relative;
-    top: 3px;
-  }
+
+  

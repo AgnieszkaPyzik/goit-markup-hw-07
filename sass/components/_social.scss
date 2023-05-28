@@ -27,22 +27,4 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
   }
-  .social__media--footer {
-   background-color: rgba(255, 255, 255, 0.1);
-   &:hover,
-   &:focus,
-   &:hover svg,
-   &:focus svg {
-     background-color: $themeColor;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   }
-  }
-  .social--footer-social-list {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .social__footer-icon {
-    fill: $lightColor;
-  }
+
